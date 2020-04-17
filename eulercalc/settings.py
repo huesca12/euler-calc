@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'herokuapp',
+    #'herokuapp',
 ]
 
 MIDDLEWARE = [
@@ -75,10 +75,14 @@ WSGI_APPLICATION = 'eulercalc.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'euler-calc',
+            'HOST': 'mongodb+srv://app:RCKgurxxPrMkZsUB@cluster0-blvmn.mongodb.net/euler-calc',
+            'USER': 'app',
+            'PASSWORD': 'RCKgurxxPrMkZsUB'
+
+        }
 }
 
 
