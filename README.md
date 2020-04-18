@@ -8,7 +8,7 @@ calculator
 ## How to test the Django project locally
 
 With python installed in your terminal and in the root repository directory run:
-```
+```Bash
 python manage.py runserver
 ```
 
@@ -17,6 +17,10 @@ python manage.py runserver
 Each Django project consists of several apps that are each structured as a Python package.
 
 With python installed in your terminal and in the root repository directory run:
-```
+```Bash
 python manage.py startapp <app name>
 ```
+
+## Stuff to note
+
+max_length is set to 130 characters
