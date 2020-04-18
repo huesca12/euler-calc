@@ -23,7 +23,7 @@ python manage.py startapp <app name>
 
 ## How to appease the heroku database migration demon
 
-After deploying a version of euler-calc with new migrations for an app run
+After deploying a version of euler-calc with new migrations for an app run:
 ```Bash
 heroku run python manage.py migrate --app euler-calc
 ```
