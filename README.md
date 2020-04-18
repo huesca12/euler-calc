@@ -21,6 +21,13 @@ With python installed in your terminal and in the root repository directory run:
 python manage.py startapp <app name>
 ```
 
+## How to appease the heroku database migration demon
+
+After deploying a version of euler-calc with new migrations for an app run
+```Bash
+heroku run python manage.py migrate --app euler-calc
+```
+
 ## Stuff to note
 
-max_length is set to 130 characters
+max_length is set to 130 characters on the request model
