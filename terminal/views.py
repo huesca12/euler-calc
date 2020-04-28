@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.http import HttpResponse
 from django.views.generic import CreateView
 from .models import RawRequest
@@ -13,3 +14,4 @@ def potato(request):
 class RequestView(CreateView):
     model = RawRequest
     fields = ('content', 'identifier')
+    return redirect(model)
