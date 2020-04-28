@@ -14,4 +14,6 @@ def potato(request):
 class RequestView(CreateView):
     model = RawRequest
     fields = ('content', 'identifier')
-    return redirect(model)
+    def post(self, request):
+        # do something
+        return redirect(model)
