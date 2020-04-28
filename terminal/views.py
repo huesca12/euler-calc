@@ -12,10 +12,7 @@ def potato(request):
     return HttpResponse("potato")
 
 class RequestView(CreateView):
-    def __init__(self, model, fields):
-        self.model = RawRequest
-        self.fields = ('content', 'identifier')
-
-    def post(self, request):
-        # do something
-        return redirect(self.model)
+        model = RawRequest
+        fields = ('content', 'identifier')
+        def get_success_url(self):
+            return reverse('potato', kwargs={'pk': self.object.pk})
