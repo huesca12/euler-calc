@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
+from django.urls import reverse
 from django.http import HttpResponse
 from django.views.generic import CreateView
 from .models import RawRequest
+
 
 # Create your views here.
 def index(request):
