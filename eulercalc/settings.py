@@ -82,7 +82,7 @@ DATABASES = {
         'default': {
             'ENGINE': 'djongo',
             'NAME': 'euler-calc',
-            'HOST': str(os.environ.get('MONGODB_URI')),
+            'HOST': str(os.environ.get('MONGODB_URL')),
             'USER': 'app',
             'PASSWORD': 'RCKgurxxPrMkZsUB'
 
