@@ -17,4 +17,4 @@ class RequestView(CreateView):
         model = RawRequest
         fields = ('content', 'identifier')
         def get_success_url(self):
-            return reverse('potato', kwargs={'pk': self.object.pk})
+            return reverse('potato')
