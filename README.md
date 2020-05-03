@@ -31,3 +31,5 @@ heroku run python manage.py migrate --app euler-calc
 ## Stuff to note
 
 max_length is set to 130 characters on the request model
+
+Don't forget to include your dependencies in requirements.txt
