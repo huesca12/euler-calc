@@ -1,5 +1,6 @@
 import os
 import pymongo
+from bson.json_util import dumps
 
 client = str(os.environ.get('MONGODB_URL'))
 change_stream = client.changestream.collection.watch()
