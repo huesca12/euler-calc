@@ -83,7 +83,7 @@ DATABASES = {
             'ENGINE': 'djongo',
             'NAME': 'euler-calc',
             'CLIENT': {
-                'host': str(os.environ.get('MONGODB_URL')),
+                'host': 'mongodb+srv://app:RCKgurxxPrMkZsUB@cluster0-blvmn.mongodb.net/euler-calc',
                 'authMechanism': 'SCRAM-SHA-1'
             }
         }

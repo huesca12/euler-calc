@@ -15,6 +15,6 @@ def potato(request):
 
 class RequestView(CreateView):
         model = RawRequest
-        fields = ('content', 'identifier')
+        fields = ('content',)
         def get_success_url(self):
             return reverse('potato')
