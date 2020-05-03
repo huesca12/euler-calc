@@ -4,3 +4,4 @@ gunicorn==19.9.0
 django-heroku==0.3.1
 django-crispy-forms==1.9.0
 dnspython==1.16.0
+sqlparse==0.2.4
