@@ -8,14 +8,7 @@ class RequestForm(forms.Form):
         self.helper = FormHelper()
         self.helper.layout = Layout(
             Fieldset(
-            HTML("""
-                <p><span id="problem">1+1=x</span>.</p>
-
-                <script>
-                    var problemSpan = document.getElementById('problem');
-                    MQ.StaticMath(problemSpan);
-                </script>
-            """),
+            HTML(
             'Request',
             ),
             ButtonHolder(
